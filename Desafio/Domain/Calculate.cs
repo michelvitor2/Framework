@@ -16,6 +16,8 @@ namespace Desafio.Domain
                 }
                 auxNumber--;
             }
+            divisorsNumber.Sort((a, b) => a.CompareTo(b));
+
             return divisorsNumber;
         }
 
