@@ -6,6 +6,11 @@ namespace Desafio.Domain
     {
         public List<int> CalculateAllDivisorsNumber(int number)
         {
+           if(number <= 0)
+           {
+                throw new System.Exception("Valor inválido");
+           }
+            
             var auxNumber = number;
             var divisorsNumber = new List<int>();
             while (auxNumber > 0)
